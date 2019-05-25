@@ -341,3 +341,40 @@ function yearsToRetirement (years, firstName) {
 yearsToRetirement(1982, 'Mushtaq');
 yearsToRetirement(1980, 'Amina');
 yearsToRetirement(1976, 'Friend');
+
+
+// *** Function statements and Expression ***
+
+/*  ** function declaration is
+  function nameOfFunction (parameter, parameter) {
+  }
+
+
+
+NB - Difference between statements and expressions is, statement performs action but not immidiate results
+while expression is piece of code which performs action and give results
+*/
+
+// Function Expression
+
+var whatDoYouDo = function (job, firstName) {
+  switch (job) {
+    case 'teacher':
+    return firstName + ' teaches kids how to code';
+
+    case 'driver':
+    return firstName + ' drives cab in London';
+
+    case 'designer':
+    return firstName + ' makes beatiful websites';
+
+    default:
+    return firstName + ' does something else';
+
+  }
+}
+
+console.log (whatDoYouDo ('teacher', 'John'));
+console.log (whatDoYouDo ('driver', 'Mike'));
+console.log (whatDoYouDo ('designer', 'Jolly'));
+console.log (whatDoYouDo ('Painter', 'Danny'));
